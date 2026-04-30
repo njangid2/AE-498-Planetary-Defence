@@ -10,6 +10,8 @@ f_rad = 0.35;                   % Fraction of energy in radiation
 d = 5000;                       % Standoff distance [m]
 
 % Geometry
+
+% Example Omega value; commented out to try solving for Omega using dimensions
 %Omega = 0.0012;                   % Solid angle [sr] (example)
 
 % Asteroid properties
