@@ -22,7 +22,6 @@ Notebook for low-thrust mission design and trajectory analysis.
 Includes:
 - Low-thrust transfer setup
 - Mission trajectory analysis
-- Deflection mission design studies
 
 ---
 
