@@ -11,7 +11,7 @@ This folder contains all code related to quad charts, including plotting scripts
 
 ---
 
-### `NuclardeltaV/`
+### `NucleardeltaV/`
 This folder contains scripts and notebooks related to nuclear deflection simulations and trajectory propagation.
 
 #### Files
