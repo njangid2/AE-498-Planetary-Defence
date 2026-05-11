@@ -22,24 +22,14 @@ Pipeline:
 
   7. Apply per-clone ΔV to each clone's velocity at t_blast
   8. Propagate deflected and undeflected clouds to
-     t_end_extended = t_impact + 30,000 days (~82 yr) to capture all
+     t_end_extended = t_impact + 21200 days to capture all
      future resonant close approaches — matches old nominal code which
-     used: mjd_end_defl = nom['t_ca'] + 30000
+     used: mjd_end_defl = nom['t_ca'] + 21200
   9. Extract worst Earth b-plane (ξ, ζ) per clone and plot overlay
-
-SOLID ANGLE NOTE
-----------------
-Ω is NOT a hardcoded Gaussian any more.  Each clone draws its shape directly
-from the physical-property CSV (bootstrap resampled), so the shape uncertainty,
-standoff uncertainty, and radius uncertainty are all propagated coherently
-through a single expression:
-
-    Ω_i  =  π · b_i · c_i  /  r_burst_i²       [sr]
-    f_geo_i  =  Ω_i  /  (4π)
 
 EXTENDED PROPAGATION NOTE
 --------------------------
-Both clouds are integrated 30,000 days (~82 yr) past the nominal impact date.
+Both clouds are integrated 21200 Days past the nominal impact date.
 propagate_to_epoch selects the WORST (min bMag) Earth event across ALL CAs
 and impacts in the full window — same logic as the old nominal code's
 get_worst_earth_ca().  caTol = 0.1 AU captures strongly deflected clones.
