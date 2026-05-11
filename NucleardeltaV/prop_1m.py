@@ -30,7 +30,7 @@ Pipeline:
 
 SOLID ANGLE NOTE
 ----------------
-Ω is NOT a hardcoded Gaussian any more.  Each clone draws its shape directly
+Each clone draws its shape directly
 from the physical-property CSV (row  i % N_csv), so the shape uncertainty,
 standoff uncertainty, and radius uncertainty are all propagated coherently
 through a single expression:
