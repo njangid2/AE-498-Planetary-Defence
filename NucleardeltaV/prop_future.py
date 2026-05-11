@@ -103,7 +103,7 @@ RANDOM_SEED = 42
 T_BLAST_ISO = '2033-11-01'   # intercept date (TDB ISO)
 T_END_ISO   = '2041-04-25'   # nominal impact date
 
-# Extended propagation: 30,000 days past nominal impact (~82 years)
+# Extended propagation: 21200 days past nominal impact (~82 years)
 T_END_EXTENDED_DAYS = 21200
 
 # ── Nominal asteroid physical properties ──────────────────────────────────────
